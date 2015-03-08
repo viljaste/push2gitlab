@@ -4,7 +4,7 @@ Pushes Git repository to Gitlab.
 
 ## Usage
 
-    push2gitlab [SOURCE] <DESTINATION>
+    push2gitlab [SOURCE] <GITLAB_URL> <NAMESPACE> <PROJECT_NAME> <TOKEN>
 
 ## Install
 

@@ -104,8 +104,6 @@ fi
 
 REMOTE_URL=$(curl -skX POST -H 'Content-Type: application/json' "${PROJECTS_URL}" -d "{ \"name\": \"${PROJECT_NAME}\", \"namespace_id\": \"${NAMESPACE_ID}\" }" | jq '.ssh_url_to_repo' | sed 's/^"//' | sed 's/"$//')
 
-git remote add origin "${REMOTE_URL}"
-
-git push origin master
+git push --mirror "${REMOTE_URL}"
 
 cd "${WORKING_DIR}"

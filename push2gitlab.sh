@@ -31,7 +31,7 @@ if [ "${1}" == "-h" ] || [ "${1}" == "--help" ]; then
 fi
 
 unknown_command() {
-  echo "push2gitlab: Unknown command. See 'svn2git --help'"
+  echo "push2gitlab: Unknown command. See 'push2gitlab --help'"
 
   exit 1
 }
